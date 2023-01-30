@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Autot</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Autot</h1>
+	<table>
+	<!-- otsikkorivi -->
+	<tr>
+	<th>Automalli</th>
+	</tr>
+	<!-- autokohtainen rivi jokaiselle autolle -->
+	<tr th:each="auto : ${autot}"> <!-- model-olion alla oleva autolista jonka keyword autot -->
+	<td th:text="${auto.automalli}">Automalli</td>
+	<td th:text="${auto.valmistusvuosi}">valmistusvuosi</td>
+	</tr>
+	
+	</table>
+</body>
+</html>
