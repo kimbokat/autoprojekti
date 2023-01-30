@@ -2,7 +2,7 @@ package hh.sof3.autoprojekti.domain;
 
 public class Auto {
 
-	// attribuutit
+	// privaatit attribuutit
 	private String automalli;
 	private Integer valmistusvuosi;
 

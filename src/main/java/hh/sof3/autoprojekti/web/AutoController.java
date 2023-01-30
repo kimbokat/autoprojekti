@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import hh.sof3.autoprojekti.domain.Auto;
 
 @Controller
+// ei @ResponseBody
 public class AutoController {
 
 	// metodi lähettää selaimeen autolistan sisältävän html-dokumentin
